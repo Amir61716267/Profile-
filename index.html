@@ -14,7 +14,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins,sans-serif;
+font-family:'Poppins',sans-serif;
 }
 
 body{
@@ -22,17 +22,18 @@ background:#0f0f0f;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+min-height:100vh;
+padding:20px;
 }
 
 .card{
-width:340px;
+width:350px;
+background:rgba(255,255,255,.06);
+backdrop-filter:blur(18px);
+border-radius:28px;
 padding:30px;
-border-radius:25px;
-background:rgba(255,255,255,.08);
-backdrop-filter:blur(15px);
 text-align:center;
-box-shadow:0 15px 40px rgba(0,0,0,.45);
+box-shadow:0 20px 45px rgba(0,0,0,.45);
 }
 
 img{
@@ -40,50 +41,45 @@ width:150px;
 height:150px;
 border-radius:50%;
 object-fit:cover;
-border:4px solid white;
+border:4px solid #fff;
 }
 
 h1{
 margin-top:20px;
-color:white;
+color:#fff;
 font-size:25px;
+font-weight:600;
 }
 
 a{
-display:block;
-margin-top:18px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:16px;
 padding:15px;
-border-radius:15px;
+background:#ffffff;
+color:#111111;
 text-decoration:none;
+font-size:17px;
 font-weight:600;
-transition:.3s;
-color:white;
-}
-
-.instagram{
-background:#E1306C;
-}
-
-.telegram{
-background:#229ED9;
-}
-
-.bale{
-background:#28A745;
-}
-
-.eitaa{
-background:#F58220;
+border-radius:16px;
+transition:.25s;
+box-shadow:0 8px 20px rgba(255,255,255,.08);
 }
 
 a:hover{
-transform:scale(1.05);
+transform:translateY(-3px);
+box-shadow:0 14px 30px rgba(255,255,255,.15);
+}
+
+a:active{
+transform:scale(.98);
 }
 
 .footer{
-margin-top:30px;
-color:#888;
+margin-top:28px;
 font-size:13px;
+color:#9a9a9a;
 }
 
 </style>
@@ -94,31 +90,23 @@ font-size:13px;
 
 <div class="card">
 
-<img src="profile.jpg" alt="Profile Photo">
+<img src="profile.jpg" alt="Profile">
 
 <h1>Seyed Amir Abbas Sajadi</h1>
 
-<a class="instagram"
-href="https://instagram.com/amirabbassajadi89"
-target="_blank">
+<a href="https://instagram.com/amirabbassajadi89" target="_blank">
 Instagram
 </a>
 
-<a class="telegram"
-href="https://t.me/Amirabbassajadi"
-target="_blank">
+<a href="https://t.me/Amirabbassajadi" target="_blank">
 Telegram
 </a>
 
-<a class="bale"
-href="https://ble.ir/Seyedamirabbassajadi"
-target="_blank">
+<a href="https://ble.ir/Seyedamirabbassajadi" target="_blank">
 Bale
 </a>
 
-<a class="eitaa"
-href="https://eitaa.com/SeyedAmirabbassajadi"
-target="_blank">
+<a href="https://eitaa.com/SeyedAmirabbassajadi" target="_blank">
 Eitaa
 </a>
 
